@@ -185,3 +185,7 @@ class user_signup(View):
                 "values":value
             }
             return render(request, 'signup.html',data)
+
+class About_page(View):
+    def get(self, request):
+        return render(request, 'about.html')
